@@ -6,15 +6,11 @@ module.exports = {
   // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
 
   title: "GIEC_ATV_Lib",
-  description: "GIEC_ATV_Lib 官方文档",
+  description: "GIEC_ATV_Lib Official documentation",
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",(否则页面将失去样式等文件)
   head: [
     // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ["link", { rel: "icon", href: "/img/favicon.ico" }], //favicons，资源放在public文件夹
-    [
-      "meta",
-      { name: "keywords", content: "hutool,Java工具集,java,orm,tools,工具" },
-    ],
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
     [
       "script",
@@ -29,11 +25,24 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav: [
-      { text: "🏡首页", link: "/" },
-      { text: "📖指南", link: "/pages/index/" },
-      { text: "⏳更新记录", link: "/pages/ChangeLog/" },
+      { text: "🏡Index", link: "/" },
+      { text: "📖Guide", link: "/pages/index/" },
+      { text: "⏳Changelog", link: "/pages/ChangeLog/" },
       {
-        text: "🏮仓库地址",
+        text: "🔁Language switching",
+        items: [
+          {
+            text: "🇨🇳",
+            link: "http://192.168.110.197:8080/",
+          },
+          {
+            text: "🇺🇸",
+            link: "http://192.168.10.16/gitlab/giec_stb/stb_atv_lib",
+          },
+        ],
+      },
+      {
+        text: "🏮Warehouse address",
         items: [
           {
             text: "🍎gitlab",
@@ -46,7 +55,7 @@ module.exports = {
     logo: "https://www.giec.cn/uploadfiles/logo/Top002629_logo.png?VG9wMDAyNjI5X2xvZ28ucG5n", // 导航栏logo
     // repo: 'https://github.com/dromara/hutool', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
-    lastUpdated: "上次更新", // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
+    lastUpdated: "Last update", // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
 
     // docsDir: 'docs', // 编辑的文件夹
     // editLinks: true, // 编辑链接
@@ -137,7 +146,7 @@ module.exports = {
           'div[class*="language-"] pre',
           'div[class*="aside-code"] aside',
         ], // String or Array
-        copyMessage: "复制成功", // default is 'Copy successfully and then paste it for use.'
+        copyMessage: "Copy successfully", // default is 'Copy successfully and then paste it for use.'
         duration: 1000, // prompt message display time.
         showInMobile: false, // whether to display on the mobile side, default: false.
       },
