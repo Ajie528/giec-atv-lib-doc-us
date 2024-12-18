@@ -32,12 +32,12 @@ module.exports = {
         text: "🔁Language switching",
         items: [
           {
-            text: "🇨🇳",
-            link: "http://192.168.110.197:8080/",
+            text: "🇨🇳 中文",
+            link: "https://giec-atv-lib-doc-zh.vercel.app/",
           },
           {
-            text: "🇺🇸",
-            link: "http://192.168.10.16/gitlab/giec_stb/stb_atv_lib",
+            text: "🇺🇸 英文",
+            link: "https://giec-atv-lib-doc-us.vercel.app/",
           },
         ],
       },
