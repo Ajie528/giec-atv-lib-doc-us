@@ -1,6 +1,6 @@
 ---
 archivesPage: true
-title: 博客文章
+title: blog posts
 permalink: /blog/
 article: false
 ---
